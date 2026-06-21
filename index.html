@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="script.js" defer></script>
+
+
+    <title>Frontend Mentor | Article preview component</title>
+
+</head>
+
+<body class="bg-slate-100 min-h-screen flex items-center justify-center font-[500]">
+
+    <main class="text-gray-500 flex flex-col items-center w-full max-w-sm px-4">
+
+        <section class="bg-white flex flex-col rounded-lg w-94 md:flex-row md:w-3xl lg:flex-row lg:w-3xl">
+
+            <div class="w-full flex">
+                <img src="./images/drawers.jpg" alt="drawers image"
+                    class="size-100% rounded-lg md:rounded-none md:bl-rounded lg-rounded-none lg:bl-rounded-none">
+            </div>
+
+
+            <div>
+
+                <div class="text-2xl font-[700] mx-5 mt-5">
+                    <p>Shift the overall look and feel by adding these wonderful
+                        touches to furniture in your home</p>
+                </div>
+
+                <div class="m-5 mb-0 text-lg mb-5">
+                    <p>Ever been in a room and felt like something was missing? Perhaps
+                        it felt slightly bare and uninviting. I’ve got some simple tips
+                        to help you make any room feel complete.</p>
+                </div>
+
+                <div class="bottom-section m-5 relative">
+
+                    <div id="author-section" class="flex items-center justify-between w-full relative">
+                        <div class="flex items-center">
+                            <div>
+                                <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton"
+                                    class="rounded-full w-12">
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold text-base text-gray-700">Michelle Appleton</div>
+                                <div class="text-sm text-gray-400">28 Jun 2020</div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center justify-center">
+                            <div
+                                class="flex size-10 items-center justify-center bg-gray-200 hover:bg-gray-300 rounded-full cursor-pointer transition-colors z-20">
+                                <img id="share-button" src="./images/icon-share.svg" alt="Share"
+                                    class="self-center size-4">
+                            </div>
+
+                            <div id="hidden-class"
+                                class="hidden py-4 px-6 bg-gray-700 rounded-xl absolute bottom-16 left-1/2 -translate-x-1/2 shadow-xl z-10 w-max md:block">
+                                <div class="uppercase text-white font-[400] flex items-center gap-5">
+                                    <p class="tracking-[0.25em] text-xs text-gray-400 font-semibold">share</p>
+                                    <a href="#" class="hover:opacity-80"><img src="./images/icon-facebook.svg"
+                                            alt="facebook logo"></a>
+                                    <a href="#" class="hover:opacity-80"><img src="./images/icon-twitter.svg"
+                                            alt="twitter logo"></a>
+                                    <a href="#" class="hover:opacity-80"><img src="./images/icon-pinterest.svg"
+                                            alt="pinterest logo"></a>
+                                </div>
+                                <div
+                                    class="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-gray-700">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mobile-social-bar" hidden
+                        class="hidden-class py-6 bg-gray-700 px-8 flex items-center justify-between md:hidden lg:hidden rounded-b-lg">
+                        <div class="uppercase text-white flex items-center gap-6">
+                            <p class="tracking-[0.25em] text-xs text-gray-400 font-semibold">share</p>
+                            <img src="./images/icon-facebook.svg" alt="facebook logo">
+                            <img src="./images/icon-twitter.svg" alt="twitter logo">
+                            <img src="./images/icon-pinterest.svg" alt="pinterest logo">
+                        </div>
+                        <div class="bg-gray-500 rounded-full flex size-10 items-center justify-center cursor-pointer">
+                            <img id="share-button" src="./images/icon-share.svg" alt="Share"
+                                class="size-4 brightness-200 invert">
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/L3viath4n-365">L3viath4n</a>.
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>
