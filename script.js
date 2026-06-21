@@ -1,4 +1,4 @@
-const shareBTN = $('[id="share-button"]');
+const shareBTN = $('[class="share-button"]');
 const mobileBar = $('#mobile-social-bar');
 const authorSec = $('#author-section');
 const desktopBar = $('#hidden-class');

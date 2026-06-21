@@ -3,12 +3,3 @@
 @theme {
     --font-sans: 'Manrope', sans-serif;
 }
-
-.attribution {
-    font-size: 0.6875rem;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
