@@ -25,6 +25,6 @@ shareBTN.on('mouseover', () => {
         touched = false;
         return;
     }
-
     desktopBar.toggle();
+    desktopBar.removeAttr('hidden');
 });
